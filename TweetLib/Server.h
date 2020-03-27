@@ -39,7 +39,7 @@ namespace tweet {
 		grpc::Status Logout(
 			grpc::ServerContext* context,
 			const proto::LogoutIn* request,
-			proto::LogoutOut* response) override;
+			proto::logoutOut* response) override;
 		grpc::Status Register(
 			grpc::ServerContext* context,
 			const proto::RegisterIn* request,

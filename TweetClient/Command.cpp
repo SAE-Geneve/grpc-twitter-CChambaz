@@ -1,4 +1,6 @@
 #include "Command.h"
+#include <google/protobuf/util/json_util.h>
+#include "../GrpcLib/Tweet.pb.h"
 
 namespace client {
 
@@ -170,7 +172,7 @@ namespace client {
 	{
 		std::cout << "LOGOUT" << std::endl;
 		proto::LogoutIn logout_in{};
-		proto::LogoutOut logout_out = client_->Logout(logout_in);
+		proto::logoutOut logout_out = client_->Logout(logout_in);
 		if (!logout_out.error())
 		{
 			std::cout << "Successful!" << std::endl;

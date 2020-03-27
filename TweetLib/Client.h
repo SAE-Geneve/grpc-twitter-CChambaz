@@ -27,7 +27,7 @@ namespace tweet {
 		proto::FollowOut Follow(const proto::FollowIn in);
 		proto::ShowOut Show(const proto::ShowIn in);
 		proto::LoginOut Login(const proto::LoginIn in);
-		proto::LogoutOut Logout(const proto::LogoutIn in);
+		proto::logoutOut Logout(const proto::LogoutIn in);
 		proto::RegisterOut Register(const proto::RegisterIn in);
 
 	protected:
